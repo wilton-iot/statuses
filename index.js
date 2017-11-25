@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 /*!
  * statuses
  * Copyright(c) 2014 Jonathan Ong
@@ -12,7 +13,7 @@
  * @private
  */
 
-var codes = require('./codes.json')
+var codes = require('statuses/codes')
 
 /**
  * Module exports.
@@ -111,3 +112,5 @@ function status (code) {
   if (!n) throw new Error('invalid status message: "' + code + '"')
   return n
 }
+
+return module.exports;});

@@ -44,5 +44,13 @@
     "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
     "update": "npm run fetch && npm run build"
+  },
+  "wilton": {
+    "excludes": [
+        "scripts",
+        "src",
+        "test",
+        "HISTORY.md"
+    ]
   }
 }

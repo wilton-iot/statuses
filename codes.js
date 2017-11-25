@@ -1,4 +1,5 @@
-{
+define([], function(){
+return {
   "100": "Continue",
   "101": "Switching Protocols",
   "102": "Processing",
@@ -62,4 +63,6 @@
   "509": "Bandwidth Limit Exceeded",
   "510": "Not Extended",
   "511": "Network Authentication Required"
-}
+};
+
+});
